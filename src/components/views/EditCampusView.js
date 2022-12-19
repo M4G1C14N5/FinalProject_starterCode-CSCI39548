@@ -1,5 +1,5 @@
 /*==================================================
-EditCampusContainer.js
+EditCampusView.js
 
 
 
