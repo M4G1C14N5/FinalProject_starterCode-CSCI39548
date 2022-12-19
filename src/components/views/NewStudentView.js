@@ -52,7 +52,7 @@ const NewStudentView = (props) => {
             </Typography>
           </div>
           <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
-            <Controller rules/>
+            
             <label style= {{color:'#11153e', fontWeight: 'bold'}}>First Name: </label>
             <input type="text" name="firstname" onChange ={(e) => handleChange(e)} />
             <br/>
