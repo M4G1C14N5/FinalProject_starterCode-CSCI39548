@@ -8,7 +8,7 @@ complete the rules set up
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-import Controller from 'react-hook-form';
+
 // Create styling for the input form
 const useStyles = makeStyles( () => ({
   formContainer:{  
