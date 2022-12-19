@@ -28,6 +28,7 @@ const AllCampusesView = (props) => {
           <h4>campus id: {campus.id}</h4>
           <p>{campus.address}</p>
           <p>{campus.description}</p>
+          <img src={campus.imageUrl} alt = "https://i.picsum.photos/id/690/200/200.jpg?hmac=DN6slU20ktSeMSXbM6U8BG_YHhebxEl3S70qNurkzk8"/>
           <button onClick={() => deleteCampus(campus.id)}>Delete</button>
           <hr/>
           
