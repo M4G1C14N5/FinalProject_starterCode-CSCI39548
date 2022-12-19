@@ -30,7 +30,7 @@ export const addCampusThunk = (campus) => async (dispatch) => {
     console.error(err);
   }
 };
- //delete campas
+ //delete campus
 export const deleteCampusThunk = campusId => async dispatch => {
   try {
     await axios.delete(`/api/campuses/${campusId}`);
