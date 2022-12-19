@@ -66,7 +66,7 @@ const EditStudentView = (props) => {
           <br/>
 
           <label style={{color:'#11153e', fontWeight: 'bold'}}>GPA: </label>
-          <input type="text" name="gpa" defaultValue={student.gpa} onChange={(e) => handleChange(e)} /> 
+          <input type="number" min="0.0" name="gpa" max="4.0"  step="0.01" defaultValue={student.gpa} onChange={(e) => handleChange(e)} /> 
           <br/>
           <br/>
 
