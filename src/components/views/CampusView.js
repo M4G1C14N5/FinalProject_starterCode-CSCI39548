@@ -13,12 +13,18 @@ const CampusView = (props) => {
   // Render a single Campus view with list of its students
   return (
     <div>
-      
+       
       
       <h1>{campus.name}</h1>
       <p>{campus.address}</p>
-      <p>{campus.description}</p> {campus.students.length !== 0 ?
+      <p>{campus.description}</p> 
+      <Link to={`/editcampus/${campus.id}`}>
+      <button>Edit Campus</button>
+    </Link>
+      {campus.students.length !== 0 ?
+      
       <div>
+        
       <h3> Students: </h3> 
       {campus.students.map( student => {
         let name = student.firstname + " " + student.lastname;
