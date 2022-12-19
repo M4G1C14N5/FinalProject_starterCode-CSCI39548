@@ -3,11 +3,12 @@ NewStudentView.js
 
 The Views component is responsible for rendering web page with data provided by the corresponding Container component.
 It constructs a React component to display the new student page.
+complete the rules set up
 ================================================== */
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
-
+import Controller from 'react-hook-form';
 // Create styling for the input form
 const useStyles = makeStyles( () => ({
   formContainer:{  
@@ -51,6 +52,7 @@ const NewStudentView = (props) => {
             </Typography>
           </div>
           <form style={{textAlign: 'center'}} onSubmit={(e) => handleSubmit(e)}>
+            <Controller rules/>
             <label style= {{color:'#11153e', fontWeight: 'bold'}}>First Name: </label>
             <input type="text" name="firstname" onChange ={(e) => handleChange(e)} />
             <br/>
@@ -58,6 +60,17 @@ const NewStudentView = (props) => {
 
             <label style={{color:'#11153e', fontWeight: 'bold'}}>Last Name: </label>
             <input type="text" name="lastname" onChange={(e) => handleChange(e)} />
+            <br/>
+            <br/>
+
+
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>Email: </label>
+            <input type="email" name="email" onChange={(e) => handleChange(e)} />
+            <br/>
+            <br/>
+
+            <label style={{color:'#11153e', fontWeight: 'bold'}}>GPA: </label>
+            <input type="number" min="0.0" max="4.0"  step="0.01" name="gpa" onChange={(e) => handleChange(e)} />
             <br/>
             <br/>
 
