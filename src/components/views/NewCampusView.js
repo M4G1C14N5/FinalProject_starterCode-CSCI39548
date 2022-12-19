@@ -1,6 +1,10 @@
-// this is newcampus but i nemaded it add campus
-// will rename to new campus
-// also dont forget to  UPdate the index 
+/*==================================================
+NewCAmpusView.js
+
+The Views component is responsible for rendering web page with data provided by the corresponding Container component.
+It constructs a React component to display the new student page.
+complete the rules set up
+================================================== */
 
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
